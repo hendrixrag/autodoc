@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="720.0" prefWidth="1000.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.controlador.FXMLController">
+   <children>
+      <AnchorPane layoutX="7.0" prefHeight="720.0" prefWidth="122.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="871.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutY="-2.0" prefHeight="720.0" prefWidth="129.0" style="-fx-background-color: #f0f0f0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                  <TilePane id="button" fx:id="btnInicio" alignment="CENTER" minHeight="70.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#clicInicio" prefHeight="70.0" styleClass="\@button.css">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" translateX="40.0" translateY="-5.0">
+                           <image>
+                              <Image url="@../images/hogar.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                        <Label style="-fx-text-fill: #000000;" text="Inicio" translateY="27.0">
+                           <font>
+                              <Font name="Roboto" size="14.0" />
+                           </font>
+                        </Label>
+                        <Line fx:id="lineaInicio" endX="100.0" startX="100.0" startY="69.626953125" stroke="#bf1717" strokeWidth="2.0" translateX="23.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TilePane>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" prefWidth="124.0" visible="false" />
+                  <TilePane id="button" fx:id="btnAgregar" alignment="CENTER" minHeight="70.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#clicAgregar" prefHeight="70.0" stylesheets="@button.css">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" translateY="65.0">
+                           <image>
+                              <Image url="@../images/agregar.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                        <Label fx:id="lblAgg" cache="true" contentDisplay="BOTTOM" pickOnBounds="false" style="-fx-text-fill: #000000;" text="Agregar caso" textOverrun="LEADING_WORD_ELLIPSIS" translateY="27.0" TilePane.alignment="CENTER">
+                           <font>
+                              <Font name="Roboto" size="14.0" />
+                           </font>
+                        </Label>
+                        <Line fx:id="lineaAgg" endX="100.0" startX="100.0" startY="69.626953125" stroke="#bf1717" strokeWidth="2.0" translateX="63.0" translateY="-70.0" visible="false" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TilePane>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                  <TilePane id="button" fx:id="btnBuscar" alignment="CENTER" minHeight="70.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#clicBuscar" prefHeight="70.0" stylesheets="@button.css">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" translateY="65.0">
+                           <image>
+                              <Image url="@../images/busqueda.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                        <Label fx:id="lblBuscar" style="-fx-text-fill: #000000;" text="Buscar caso" translateY="27.0">
+                           <font>
+                              <Font name="Roboto" size="14.0" />
+                           </font></Label>
+                        <Line fx:id="lineaBuscar" endX="100.0" startX="100.0" startY="69.626953125" stroke="#bf1717" strokeWidth="2.0" translateX="63.0" translateY="-70.0" visible="false" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TilePane>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                  <TilePane id="button" fx:id="btnAbout" alignment="CENTER" minHeight="70.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#clicAbout" prefHeight="70.0" stylesheets="@button.css">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" translateY="65.0">
+                           <image>
+                              <Image url="@../images/informacion.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                        <Label fx:id="lblAbout" style="-fx-text-fill: #000000;" text="Acerca de..." translateY="27.0">
+                           <font>
+                              <Font name="Roboto" size="14.0" />
+                           </font></Label>
+                        <Line fx:id="lineaAbout" endX="100.0" startX="100.0" startY="69.626953125" stroke="#bf1717" strokeWidth="2.0" translateX="63.0" translateY="-70.0" visible="false" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TilePane>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/somosAIT.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Separator>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="btnCerrar" fitHeight="20.0" fitWidth="25.0" layoutX="969.0" layoutY="12.0" onMouseClicked="#clicCerrar" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="688.0" AnchorPane.leftAnchor="969.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <image>
+            <Image url="@../images/cerrar.png" />
+         </image>
+      </ImageView>
+      <TilePane fx:id="btnMin" alignment="BOTTOM_CENTER" layoutX="942.0" layoutY="10.0" onMouseClicked="#clicMin" prefHeight="20.0" prefWidth="22.0">
+         <children>
+            <Line endX="90.0" startX="70.0" strokeWidth="2.0" />
+         </children>
+      </TilePane>
+      <AnchorPane fx:id="paneCasos" layoutX="140.0" layoutY="45.0" maxHeight="700.0" maxWidth="800.0" minHeight="700.0" minWidth="800.0" prefHeight="650.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="141.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="45.0">
+         <children>
+            <Label layoutX="79.0" layoutY="79.0" text="Tipo de caso:">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="comboTipoCaso" layoutX="186.0" layoutY="75.0" onAction="#selecTipoCaso" prefHeight="26.0" prefWidth="129.0" promptText="Seleccione..." style="-fx-background-color: #bf7104;" unFocusColor="#bd1919" />
+            <Label layoutX="79.0" layoutY="154.0" text="Relacionado a:">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="comboRelacionado" layoutX="186.0" layoutY="150.0" onAction="#selecRelacionado" prefHeight="26.0" prefWidth="129.0" promptText="Seleccione..." style="-fx-background-color: #bf7104;" unFocusColor="#bd1919" />
+            <Label fx:id="lblResumen" layoutX="79.0" layoutY="206.0" text="Resumen del caso:">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtResumen" layoutX="75.0" layoutY="240.0" onKeyTyped="#insertarTexto" prefHeight="16.0" prefWidth="310.0" />
+            <Label layoutX="299.0" layoutY="308.0" text="Documentación del caso:">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="txtDoc" layoutX="156.0" layoutY="328.0" onKeyTyped="#insertarTexto" prefHeight="244.0" prefWidth="462.0" />
+            <JFXButton id="button" fx:id="btnGuardar" buttonType="RAISED" layoutX="344.0" layoutY="595.0" onAction="#guardarCaso" prefHeight="30.0" prefWidth="82.0" stylesheets="@button.css" text="Guardar" textAlignment="CENTER">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton id="button" fx:id="btnCopiarSol" buttonType="RAISED" layoutX="346.0" layoutY="595.0" onAction="#copiarSolucion" prefHeight="30.0" prefWidth="82.0" stylesheets="@button.css" text="Copiar" textAlignment="CENTER">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXComboBox fx:id="comboResumenes" layoutX="426.0" layoutY="101.0" onAction="#selecResumen" prefHeight="26.0" prefWidth="322.0" promptText="Seleccione..." style="-fx-background-color: #bf7104;" unFocusColor="#bd1919" visibleRowCount="6" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="paneInicio" layoutX="140.0" layoutY="45.0" prefHeight="650.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="141.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="45.0">
+         <children>
+            <Text fx:id="txtBienvenida" layoutX="15.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenido" textAlignment="CENTER" wrappingWidth="760.79296875">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="paneAbout" layoutX="140.0" layoutY="45.0" prefHeight="650.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="141.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="45.0">
+         <children>
+            <Text layoutX="189.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aplicación desarrollada por Hendrix Arrieta como proyecto de pasantías. Iconos obtenidos de FlatIcon. Desarrollado en el lenguaje de programación Java con la librería JavaFX para las vistas." wrappingWidth="406.9453125">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <BorderPane layoutX="459.54296875" layoutY="21.626953125" AnchorPane.leftAnchor="459.54296875" AnchorPane.rightAnchor="423.45703125">
+         <top>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="AutoDoc" textAlignment="CENTER" translateY="-15.0" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Roboto Black" size="30.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="0.5781990521327015" endY="0.41706161137440756" startX="0.5260663507109006" startY="0.41706161137440756">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.7411764860153198" green="0.09803921729326248" blue="0.09803921729326248" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </Text>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
